@@ -1,16 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Sun LP</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Sun LP</title>
+  <body>
+    <header>
+      <div class="navbar">
+        <h1 class="brand">
+          <a href="#sec-start" title="Sunscrapers">
+            <img src="./img/logo.svg" alt="SunScrapers" />
+          </a>
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="#sec-start">Start</a></li>
+            <li><a href="#sec-services">Services</a></li>
+            <li><a href="#sec-testimonials">Testimonials</a></li>
+            <li><a href="#sec-contact">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
 
-</head>
+      <section id="sec-start" class="hero">
+        <div class="hero__content">
+          <h2 class="hero__heading">Recruitment landing page.</h2>
+          <p class="hero__para">
+            Malesuada a nulla a venenatis parturient a malesuada nunc auctor
+            metus consectetur velit dolor eget diam mi condimentum ac ut a
+            tellus vitae.
+          </p>
+          <a href="#sec-services" class="btn--hero">services</a>
+        </div>
+        <div class="hero__img">
+          <img src="./img/header_image.png" alt="" />
+        </div>
+      </section>
 
-<body>
- Hello World
-</body>
+      <section id="sec-services" class="services">
+        <em class="section-subheading">SERVICES</em>
+        <h2 class="section-heading">What we do?</h2>
+        <p class="services__para">
+          Agile is an umbrella term for different methodologies united by a
+          common philosophy captured in the Agile Manifesto. Here are some Agile
+          tactics we implement in our daily work:
+        </p>
+        <div class="services__highlights">
+          <div class="services-box">
+            <img src="./img/scrum_icon.svg" alt="" class="services-box__icon" />
+            <h3 class="services-box__title">Scrum</h3>
+            <a href="#" class="btn btn--primary">Learn more</a>
+          </div>
+          <div class="services-box">
+            <img src="./img/lean_icon.svg" alt="" class="services-box__icon" />
+            <h3 class="services-box__title">Lean Software Development</h3>
+            <a href="#" class="btn btn--primary">Learn more</a>
+          </div>
+          <div class="services-box">
+            <img
+              src="./img/kanban_icon.svg"
+              alt=""
+              class="services-box__icon"
+            />
+            <h3 class="services-box__title">Kanban</h3>
+            <a href="#" class="btn btn--primary">Learn more</a>
+          </div>
+        </div>
+      </section>
 
+      <section id="sec-testimonials" class="testimonials">
+        <em class="section-subheading">TESTIMONIALS</em>
+        <h2 class="section-heading">What they say about us?</h2>
+        <p class="testimonials__para">
+          „Faucibus netus sem lobortis consectetur a condimentum malesuada
+          condimentum aliquam a erat suspendisse consectetur aptent parturient
+          mi ut posuere vestibulum tortor.Parturient velit aliquam iaculis
+          mauris vestibulum aenean quam vestibulum a a nostra potenti a molestie
+          consectetur sagittis at elementum luctus.Ac primis.”
+        </p>
+        <div class="author-box">
+          <img src="./img/mikeRice1.png" alt="" class="author-box__img" />
+          <div class="author-box__content">
+            <p class="author-box__title">Mike Rice, managing Director</p>
+            <p class="author-box__subtitle">Client since 2010</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="sec-contact" class="contact">
+        <em class="section-subheading">CONTACT US</em>
+        <h2 class="section-heading">Let’s talk!</h2>
+        <form class="contact__form">
+          <label for="name" class="contact__label">Name</label>
+          <input type="text" name="name" id="name" class="contact__input" />
+          <label for="email" class="contact__label">E-mail</label>
+          <input type="email" name="email" id="email" class="contact__input" />
+          <label for="phone" class="contact__label">Phone</label>
+          <input type="phone" name="phone" id="phone" class="contact__input" />
+          <label for="message" class="contact__label">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            class="contact__input"
+          ></textarea>
+          <button class="btn btn--primary">Let's talk</button>
+        </form>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <div class="footer__address">
+        <h2 class="footer__header">Office</h2>
+        <address class="footer__para">
+          Sunscrapers Sp. z o.o. ul. Pokorna 2/947 (entrance 9) 00-199 Warsaw
+          VAT EU: PL1182116268
+        </address>
+      </div>
+      <div class="footer__emails">
+        <h2 class="footer__header">Emails</h2>
+        <h3>New Business</h3>
+        <a href="mailto:hello@sunscrapers.com" class="footer__link"
+          >hello@sunscrapers.com</a
+        >
+        <h3>Careers</h3>
+        <a href="mailto:careers@sunscrapers.com" class="footer__link"
+          >careers@sunscrapers.com</a
+        >
+      </div>
+      <div class="footer__awards">
+        <h2 class="footer__header">Awards</h2>
+        <a href="#"><img src="./img/clutch.png" alt=""/></a>
+      </div>
+      <div class="footer__social">
+        <h2 class="footer__header">Be in touch</h2>
+        <ul class="social">
+          <li>
+            <a href="#" class="social__icon social__icon--fb">fb</a>
+          </li>
+          <li>
+            <a href="#" class="social__icon social__icon--tw">tw</a>
+          </li>
+          <li>
+            <a href="#" class="social__icon social__icon--ln">ln</a>
+          </li>
+          <li>
+            <a href="#" class="social__icon social__icon--in">in</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
