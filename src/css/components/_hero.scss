@@ -1,0 +1,117 @@
+.hero {
+  font-size: 1rem;
+  background: $darkGrey;
+  color: $offWhite;
+  min-height: 72rem + $menuOffset;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $menuOffset 10.416666666666667% 0 10.416666666666667%;
+  @media screen and (max-width:1200px) {
+    font-size: 0.8rem;
+    min-height: 62rem + $menuOffset;
+  }
+  @media screen and (max-width:1000px) {
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 52rem + $menuMobileOffset;
+  }
+
+  // &>.container {
+
+  //     height: 100%;
+  //     background: pink;
+  // }
+
+  &__content {
+    flex: 0 1 45.5rem;
+    @media screen and (max-width:1000px) {
+      flex: 0 1 auto;
+    }
+  }
+
+  &__img {
+    @media screen and (max-width:1000px) {
+      margin-top: 4rem;
+    }
+
+    img {
+      width: 100%;
+    }
+  } 
+
+  &__heading {
+    font-size: 7.2em;
+    font-family: $fontMotif;
+    margin-bottom: 1.5rem;
+    @media screen and (max-width:1000px) {
+      font-size: 5.2em;
+    }
+  }
+
+  &__para {
+    font-size: 2em;
+    line-height: 3rem;
+    color: $offGrey;
+    margin-bottom: 3rem;
+  }
+}
+
+.btn--hero {
+  font-family: $fontMotif;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  color: $offWhite;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 2.2rem;
+  transition: all 0.2s ease-in-out;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.2rem;
+    height: 1.6rem;
+    background-image: url("../img/scrollIcon.svg");
+    animation: mousejump 2s;
+    animation-iteration-count: 3;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 2.2rem;
+    bottom: -4px;
+    width: calc(100% - 2.2rem);
+    height: 2px;
+    background: $mainMotif;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+@keyframes mousejump {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(10px);
+  }
+  60% {
+    transform: translateY(6px);
+  }
+}

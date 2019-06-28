@@ -1,0 +1,135 @@
+.navbar {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: $menuOffset;
+  padding: 0 4rem;
+  background: $offWhite;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (max-width: 1000px) {
+    height: $menuMobileOffset;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 0 2rem;
+  }
+
+  &__brand {
+  }
+
+  &__menu {
+    font-family: $fontMotif;
+    font-size: 1.4rem;
+    display: flex;
+    @media screen and (max-width: 1000px) {
+      font-size: 1.8rem;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      position: fixed;
+      background: $offWhite;
+      top: $menuMobileOffset;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: translateX(100%);
+      transition: all 0.5s ease-in-out;
+
+      &--opened {
+        transform: translateX(0);
+      }
+    }
+
+    li {
+      margin-right: 5rem;
+      display: flex;
+      align-items: center;
+      @media screen and (max-width: 1000px) {
+        margin: 2rem 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        position: relative;
+        text-decoration: none;
+        font-weight: 700;
+        color: $mainText;
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -4px;
+          width: 100%;
+          height: 2px;
+          background: $mainMotif;
+
+          transform: scaleX(0);
+          transform-origin: right;
+          transition: transform 250ms ease-in;
+        }
+
+        &:hover::after {
+          transform: scaleX(1);
+          transform-origin: left;
+        }
+      }
+    }
+  }
+
+  &__hamburger {
+    display: none;
+    border: 0px;
+    background: $mainText;
+    text-indent: -10000px;
+    height: 5px;
+    width: 30px;
+    border-radius: 100px;
+    position: relative;
+    z-index: 200;
+    cursor: pointer;
+    @media screen and (max-width: 1000px) {
+      display: block;
+    }
+
+    &:before {
+      content: "";
+      height: 5px;
+      width: 30px;
+      background: $mainMotif;
+      border-radius: 100px;
+      position: absolute;
+      top: -10px;
+      left: 0;
+      transition: all 0.5s ease-in-out;
+    }
+
+    &:after {
+      content: "";
+      height: 5px;
+      width: 30px;
+      background: $mainText;
+      border-radius: 100px;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      transition: all 0.5s ease-in-out;
+    }
+
+    &--close {
+      background: transparent;
+
+      &:before {
+        transform: translateY(10px) rotate(45deg);
+      }
+
+      &:after {
+        transform: translateY(-10px) rotate(-45deg);
+      }
+    }
+  }
+}

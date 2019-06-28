@@ -2,6 +2,9 @@
 @import "constants";
 @import "mixins";
 @import "typography";
+@import "components/btn";
+@import "components/navbar";
+@import "components/hero";
 
 
 html {
@@ -14,5 +17,17 @@ body {
   color: $mainText;
   background: $offWhite;
   text-align: left;
+}
+
+.container {
+  width: 1440px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.orange-motif {
+  color: $mainMotif;
+  font-size: inherit;
+  font-family: inherit;
 }
 
