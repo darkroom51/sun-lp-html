@@ -1,0 +1,65 @@
+.services {
+  font-size: 1rem;
+  text-align: center;
+  @media screen and (max-width:1000px) {
+    font-size: 0.8rem;
+  }
+
+  &__para {
+    max-width: 62rem;
+    margin: 0 auto;
+    min-height: 15rem;
+    font-size: 1.8em;
+    line-height: 1.8;
+    color: $text68;
+    @media screen and (max-width: 768px) {
+      min-height: auto;
+      padding: 0 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__highlights {
+    max-width: 144rem - 60rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 768px) {
+      display: block;
+      max-width: 32rem;
+    }
+  }
+}
+
+.services-box {
+  display: flex;
+  flex-direction: column;
+  min-height: 28.5rem;
+  @media screen and (max-width: 768px) {
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  &__icon {
+    margin-bottom: 2rem;
+
+    &--scrum {
+      margin-top: 8px;
+    }
+  }
+
+  &__title {
+    font-family: $fontMotif;
+    font-size: 1.8rem;
+    line-height: 1.9rem;
+    font-weight: 700;
+  }
+
+  a.btn {
+    margin-top: auto;
+    @media screen and (max-width: 768px) {
+      margin-top: 2rem;
+    }
+  }
+}
+

@@ -5,6 +5,7 @@
 @import "components/btn";
 @import "components/navbar";
 @import "components/hero";
+@import "components/services";
 
 
 html {
@@ -29,5 +30,27 @@ body {
   color: $mainMotif;
   font-size: inherit;
   font-family: inherit;
+}
+
+.section-subheading {
+  font-family: $fontMotif;
+  font-size: 1.2em;
+  color: $text15;
+  text-align: center;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 11rem;
+  @media screen and (max-width: 1000px) {
+    margin-top: 8rem;
+  }
+}
+
+.section-heading {
+  font-family: $fontMotif;
+  font-size: 3.6em;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 3.4rem;
 }
 
