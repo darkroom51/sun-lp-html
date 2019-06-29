@@ -1,0 +1,57 @@
+.contact {
+  font-size: 1rem;
+  background-color: $mainText;
+  background-image: url("../img/contactus_background.png");
+  background-repeat: no-repeat;
+  background-position: 50% -4.5em;
+  color: $offWhite;
+  padding: 1px 0;
+
+  &__form {
+    max-width: 36rem;
+    margin: 0 auto;
+    @media screen and (max-width:480px) {
+      padding: 0 2rem;
+    }
+  }
+
+  &__label {
+    font-family: $fontMotif;
+    font-size: 1.2rem;
+    color: $textCD;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 2.7rem 0 1rem 0;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    border: 0;
+    background: $inputBG;
+    font-family: $fontMotif;
+    font-size: 1.8rem;
+    color: $offWhite;
+    padding: 2.1rem 2.6rem 1.9rem;
+    border-radius: 0.3rem;
+    border-bottom: 2px solid $inputBG;
+    transition: all .3s ease-in-out;
+
+    &:focus {
+      border-bottom: 2px solid $mainMotif;
+    }
+
+    &--textarea {
+      min-height: 11.5rem;
+    }
+  }
+
+  button.btn {
+    display: block;
+    margin: 4.4rem auto 12rem auto;
+    @media screen and (max-width:480px) {
+      margin-bottom: 8rem;
+    }
+  }
+}

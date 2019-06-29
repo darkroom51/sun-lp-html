@@ -1,0 +1,19 @@
+// TODO
+
+.testimonials {
+    font-size: 1rem;
+    background: $testiBG;
+    position: relative;
+}
+
+.carousel-box {
+    position: relative;
+    background: $offWhite;
+    max-width: 94.5rem;
+    margin: auto;
+    // top: -3rem;
+    min-height: 61.5rem;
+    padding: 1px 0;
+    box-shadow: 0 16px 26px 0 rgba(0, 0, 0, 0.08);
+    border-radius: .3rem;
+}

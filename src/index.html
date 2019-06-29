@@ -9,38 +9,40 @@
 
   <body>
     <header>
-        <div class="navbar">
-          <h1 class="navbar__brand">
-            <a href="#sec-start" title="Sunscrapers">
-              <img src="./img/logo.svg" alt="SunScrapers" />
-            </a>
-          </h1>
-          <nav>
-            <ul class="navbar__menu">
-              <li><a href="#sec-start">Start</a></li>
-              <li><a href="#sec-services">Services</a></li>
-              <li><a href="#sec-testimonials">Testimonials</a></li>
-              <li><a href="#sec-contact" class="btn">Contact Us</a></li>
-            </ul>
-            <button class="navbar__hamburger">Open Menu</button>
-          </nav>
-        </div>
+      <div class="navbar">
+        <h1 class="navbar__brand">
+          <a href="#sec-start" title="Sunscrapers">
+            <img src="./img/logo.svg" alt="SunScrapers" />
+          </a>
+        </h1>
+        <nav>
+          <ul class="navbar__menu">
+            <li><a href="#sec-start">Start</a></li>
+            <li><a href="#sec-services">Services</a></li>
+            <li><a href="#sec-testimonials">Testimonials</a></li>
+            <li><a href="#sec-contact" class="btn">Contact Us</a></li>
+          </ul>
+          <button class="navbar__hamburger">Open Menu</button>
+        </nav>
+      </div>
     </header>
     <main class="main">
       <section id="sec-start" class="hero">
         <!-- <div class="container"> -->
-          <div class="hero__content">
-            <h2 class="hero__heading">Recruitment landing page<span class="orange-motif">.</span></h2>
-            <p class="hero__para">
-              Malesuada a nulla a venenatis parturient a malesuada nunc auctor
-              metus consectetur velit dolor eget diam mi condimentum ac ut a
-              tellus vitae.
-            </p>
-            <a href="#sec-services" class="btn--hero">services</a>
-          </div>
-          <div class="hero__img">
-            <img src="./img/header_image.png" alt="" />
-          </div>
+        <div class="hero__content">
+          <h2 class="hero__heading">
+            Recruitment landing page<span class="orange-motif">.</span>
+          </h2>
+          <p class="hero__para">
+            Malesuada a nulla a venenatis parturient a malesuada nunc auctor
+            metus consectetur velit dolor eget diam mi condimentum ac ut a
+            tellus vitae.
+          </p>
+          <a href="#sec-services" class="btn--hero">services</a>
+        </div>
+        <div class="hero__img">
+          <img src="./img/header_image.png" alt="" />
+        </div>
         <!-- </div> -->
       </section>
 
@@ -54,13 +56,17 @@
         </p>
         <div class="services__highlights">
           <div class="services-box">
-            <img src="./img/scrum_icon.svg" alt="" class="services-box__icon services-box__icon--scrum" />
+            <img
+              src="./img/scrum_icon.svg"
+              alt=""
+              class="services-box__icon services-box__icon--scrum"
+            />
             <h3 class="services-box__title">Scrum</h3>
             <a href="#" class="btn btn--primary">Learn more</a>
           </div>
           <div class="services-box">
             <img src="./img/lean_icon.svg" alt="" class="services-box__icon" />
-            <h3 class="services-box__title">Lean Software<br>Development</h3>
+            <h3 class="services-box__title">Lean Software<br />Development</h3>
             <a href="#" class="btn btn--primary">Learn more</a>
           </div>
           <div class="services-box">
@@ -76,26 +82,28 @@
       </section>
 
       <section id="sec-testimonials" class="testimonials">
-        <em class="section-subheading">TESTIMONIALS</em>
-        <h2 class="section-heading">What they say about us?</h2>
-        <p class="testimonials__para">
-          „Faucibus netus sem lobortis consectetur a condimentum malesuada
-          condimentum aliquam a erat suspendisse consectetur aptent parturient
-          mi ut posuere vestibulum tortor.Parturient velit aliquam iaculis
-          mauris vestibulum aenean quam vestibulum a a nostra potenti a molestie
-          consectetur sagittis at elementum luctus.Ac primis.”
-        </p>
-        <div class="author-box">
-          <img src="./img/mikeRice1.png" alt="" class="author-box__img" />
-          <div class="author-box__content">
-            <p class="author-box__title">Mike Rice, managing Director</p>
-            <p class="author-box__subtitle">Client since 2010</p>
+        <div class="carousel-box">
+          <em class="section-subheading">TESTIMONIALS</em>
+          <h2 class="section-heading">What they say about us?</h2>
+          <p class="testimonials__para">
+            „Faucibus netus sem lobortis consectetur a condimentum malesuada
+            condimentum aliquam a erat suspendisse consectetur aptent parturient
+            mi ut posuere vestibulum tortor.Parturient velit aliquam iaculis
+            mauris vestibulum aenean quam vestibulum a a nostra potenti a
+            molestie consectetur sagittis at elementum luctus.Ac primis.”
+          </p>
+          <div class="author-box">
+            <img src="./img/mikeRice1.png" alt="" class="author-box__img" />
+            <div class="author-box__content">
+              <p class="author-box__title">Mike Rice, managing Director</p>
+              <p class="author-box__subtitle">Client since 2010</p>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="sec-contact" class="contact">
-        <em class="section-subheading">CONTACT US</em>
+        <em class="section-subheading section-subheading--white">CONTACT US</em>
         <h2 class="section-heading">Let’s talk!</h2>
         <form class="contact__form">
           <label for="name" class="contact__label">Name</label>
@@ -108,7 +116,7 @@
           <textarea
             name="message"
             id="message"
-            class="contact__input"
+            class="contact__input contact__input--textarea"
           ></textarea>
           <button class="btn btn--secondary">Let's talk</button>
         </form>

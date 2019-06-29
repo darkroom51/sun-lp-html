@@ -6,6 +6,8 @@
 @import "components/navbar";
 @import "components/hero";
 @import "components/services";
+@import "components/testimonials";
+@import "components/contact";
 
 
 html {
@@ -39,10 +41,14 @@ body {
   text-align: center;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  display: inline-block;
+  display: block;
   margin-top: 11rem;
   @media screen and (max-width: 1000px) {
     margin-top: 8rem;
+  }
+
+  &--white {
+    color: $offWhite;
   }
 }
 

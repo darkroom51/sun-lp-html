@@ -10,6 +10,7 @@
   justify-content: space-between;
   @media screen and (max-width: 1000px) {
     height: $menuMobileOffset;
+    box-shadow: $sun-shadow;
   }
   @media screen and (max-width: 480px) {
     padding: 0 2rem;
@@ -125,6 +126,7 @@
 
       &:before {
         transform: translateY(10px) rotate(45deg);
+        background: $mainText;
       }
 
       &:after {
