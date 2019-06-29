@@ -2,18 +2,23 @@
   position: fixed;
   z-index: 100;
   width: 100%;
-  height: $menuOffset;
-  padding: 0 4rem;
   background: $offWhite;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  @media screen and (max-width: 1000px) {
-    height: $menuMobileOffset;
-    box-shadow: $sun-shadow;
-  }
-  @media screen and (max-width: 480px) {
-    padding: 0 2rem;
+
+  &__wrapper {
+    max-width: 144rem;
+    margin: 0 auto;
+    height: $menuOffset;
+    padding: 0 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 1000px) {
+      height: $menuMobileOffset;
+      box-shadow: $sun-shadow;
+    }
+    @media screen and (max-width: 480px) {
+      padding: 0 2rem;
+    }
   }
 
   &__brand {

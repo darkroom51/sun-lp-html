@@ -8,43 +8,45 @@
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <div class="navbar">
-        <h1 class="navbar__brand">
-          <a href="#sec-start" title="Sunscrapers">
-            <img src="./img/logo.svg" alt="SunScrapers" />
-          </a>
-        </h1>
-        <nav>
-          <ul class="navbar__menu">
-            <li><a href="#sec-start">Start</a></li>
-            <li><a href="#sec-services">Services</a></li>
-            <li><a href="#sec-testimonials">Testimonials</a></li>
-            <li><a href="#sec-contact" class="btn">Contact Us</a></li>
-          </ul>
-          <button class="navbar__hamburger">Open Menu</button>
-        </nav>
+        <div class="navbar__wrapper">
+          <h1 class="navbar__brand">
+            <a href="#sec-start" title="Sunscrapers">
+              <img src="./img/logo.svg" alt="SunScrapers" />
+            </a>
+          </h1>
+          <nav>
+            <ul class="navbar__menu">
+              <li><a href="#sec-start">Start</a></li>
+              <li><a href="#sec-services">Services</a></li>
+              <li><a href="#sec-testimonials">Testimonials</a></li>
+              <li><a href="#sec-contact" class="btn">Contact Us</a></li>
+            </ul>
+            <button class="navbar__hamburger">Open Menu</button>
+          </nav>
+        </div>
       </div>
     </header>
 
     <main class="main">
       <section id="sec-start" class="hero">
-        <!-- <div class="container"> -->
-        <div class="hero__content">
-          <h2 class="hero__heading">
-            Recruitment landing page<span class="orange-motif">.</span>
-          </h2>
-          <p class="hero__para">
-            Malesuada a nulla a venenatis parturient a malesuada nunc auctor
-            metus consectetur velit dolor eget diam mi condimentum ac ut a
-            tellus vitae.
-          </p>
-          <a href="#sec-services" class="btn--hero">services</a>
+        <div class="hero__wrapper">
+          <div class="hero__content">
+            <h2 class="hero__heading">
+              Recruitment landing page<span class="orange-motif">.</span>
+            </h2>
+            <p class="hero__para">
+              Malesuada a nulla a venenatis parturient a malesuada nunc auctor
+              metus consectetur velit dolor eget diam mi condimentum ac ut a
+              tellus vitae.
+            </p>
+            <a href="#sec-services" class="btn--hero">services</a>
+          </div>
+          <div class="hero__img">
+            <img src="./img/header_image.png" alt="" />
+          </div>
         </div>
-        <div class="hero__img">
-          <img src="./img/header_image.png" alt="" />
-        </div>
-        <!-- </div> -->
       </section>
 
       <section id="sec-services" class="services">
@@ -137,9 +139,13 @@
       <div class="footer__emails">
         <h2 class="footer__heading footer__heading--emails">Emails</h2>
         <h3 class="footer__subheading">New Business</h3>
-        <a href="mailto:hello@sunscrapers.com" class="footer__link">hello@sunscrapers.com</a>
+        <a href="mailto:hello@sunscrapers.com" class="footer__link"
+          >hello@sunscrapers.com</a
+        >
         <h3 class="footer__subheading">Careers</h3>
-        <a href="mailto:careers@sunscrapers.com" class="footer__link">careers@sunscrapers.com</a>
+        <a href="mailto:careers@sunscrapers.com" class="footer__link"
+          >careers@sunscrapers.com</a
+        >
       </div>
       <div class="footer__awards">
         <h2 class="footer__heading">Awards</h2>
@@ -163,6 +169,5 @@
         </ul>
       </div>
     </footer>
-
   </body>
 </html>
