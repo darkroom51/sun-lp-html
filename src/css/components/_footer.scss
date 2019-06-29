@@ -1,0 +1,136 @@
+.footer {
+  max-width: 144rem - 30rem;
+  margin: 0 auto;
+  padding: 7.3rem 0 8rem 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  & > * {
+    flex: 1 1 25%;
+  }
+
+  @media screen and (max-width:1200px) {
+    padding: 7.3rem 2rem 8rem 2rem;
+  }
+  @media screen and (max-width:1000px) {
+    & > * {
+      flex: 1 1 50%;
+
+      &:nth-child(n+3){
+        margin-top: 3rem;
+      }
+    }
+  }
+  @media screen and (max-width:768px) {
+    padding: 4rem 2rem;
+  }
+  @media screen and (max-width:480px) {
+    flex-direction: column;
+
+    & > * {
+      &:nth-child(2){
+        margin-top: 3rem;
+      }
+    }
+  }
+
+  &__heading {
+    font-family: $fontMotif;
+    font-size: 1.2rem;
+    letter-spacing: 0.83px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+
+    &--emails {
+      text-indent: -10000px;
+      @media screen and (max-width:1000px) {
+        text-indent: 0px;
+      }
+    }
+  }
+
+  &__subheading {
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+    color: $text50;
+
+    &:not(:first-child) {
+      margin-top: 1rem;
+    }
+  }
+
+  &__para {
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+    color: $text50;
+  }
+
+  &__link {
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: $mainMotif;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $text50;
+    }
+  }
+}
+
+.social-menu {
+  display: flex;
+
+  &__icon {
+    display: block;
+    width: 46px;
+    height: 46px;
+    transition: all .3s ease-in-out;
+
+    &:not(:first-child) {
+      margin-left: 1.1rem;
+    }
+
+    a {
+      display: block;
+      width: 46px;
+      height: 46px;
+      background: transparent;
+      text-indent: -10000px;
+    }
+
+    &--fb {
+      background: url("../img/facebook.svg") center no-repeat;
+
+      &:hover {
+        background: url("../img/facebookActive.svg") center no-repeat;
+      }
+    }
+
+    &--tw {
+      background: url("../img/twitter.svg") center no-repeat;
+
+      &:hover {
+        background: url("../img/twitterActive.svg") center no-repeat;
+      }
+    }
+
+    &--ln {
+      background: url("../img/linkedin.svg") center no-repeat;
+      
+      &:hover {
+        background: url("../img/linkedinActive.svg") center no-repeat;
+      }
+    }
+
+    &--in {
+      background: url("../img/instagram.svg") center no-repeat;
+      
+      &:hover {
+        background: url("../img/instagramActive.svg") center no-repeat;
+      }
+    }
+  }
+}

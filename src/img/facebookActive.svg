@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>facebookActive</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="footer" transform="translate(-17.000000, -308.000000)">
+            <g id="facebookActive" transform="translate(18.000000, 309.000000)">
+                <circle id="Oval-4" stroke="#E6E6E6" cx="22" cy="22" r="22"></circle>
+                <path d="M19.1148636,29 L19.0909091,21.2727273 L16,21.2727273 L16,18.1818182 L19.0909091,18.1818182 L19.0909091,16.25 C19.0909091,13.3824091 20.8666364,12 23.4251364,12 C24.6506818,12 25.7039091,12.0911818 26.0106818,12.1321364 L26.0106818,15.1287727 L24.2365,15.1303182 C22.8448182,15.1303182 22.5751364,15.791 22.5751364,16.7615455 L22.5751364,18.1818182 L26.625,18.1818182 L25.0795455,21.2727273 L22.5751364,21.2727273 L22.5751364,29 L19.1148636,29 Z" id="Fill-34" fill="#0B5AB5"></path>
+            </g>
+        </g>
+    </g>
+</svg>

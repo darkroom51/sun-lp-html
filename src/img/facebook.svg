@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45"><defs><style>.a{fill:none;stroke:#e6e6e6;stroke-miterlimit:10;}.b{fill:#bcbcbc;}</style></defs><g transform="translate(0.5 0.5)"><circle class="a" cx="22" cy="22" r="22"/><path class="b" d="M3.115,17,3.091,9.273H0V6.182H3.091V4.25C3.091,1.382,4.867,0,7.425,0a23.677,23.677,0,0,1,2.586.132v3l-1.774,0c-1.392,0-1.661.661-1.661,1.631v1.42h4.05L9.08,9.273h-2.5V17Z" transform="translate(16 12)"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="footer" transform="translate(-17.000000, -366.000000)">
+            <g id="facebook" transform="translate(18.000000, 367.000000)">
+                <circle id="Oval-4" stroke="#E6E6E6" cx="22" cy="22" r="22"></circle>
+                <path d="M19.1148636,29 L19.0909091,21.2727273 L16,21.2727273 L16,18.1818182 L19.0909091,18.1818182 L19.0909091,16.25 C19.0909091,13.3824091 20.8666364,12 23.4251364,12 C24.6506818,12 25.7039091,12.0911818 26.0106818,12.1321364 L26.0106818,15.1287727 L24.2365,15.1303182 C22.8448182,15.1303182 22.5751364,15.791 22.5751364,16.7615455 L22.5751364,18.1818182 L26.625,18.1818182 L25.0795455,21.2727273 L22.5751364,21.2727273 L22.5751364,29 L19.1148636,29 Z" id="Fill-34" fill="#BCBCBC"></path>
+            </g>
+        </g>
+    </g>
+</svg>
