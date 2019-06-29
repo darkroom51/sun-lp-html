@@ -5,7 +5,10 @@
   background-repeat: no-repeat;
   background-position: 50% -4.5em;
   color: $offWhite;
-  padding: 1px 0;
+  padding: 0.1px 0;
+  @media screen and (max-width:$sun-tablet) {
+    font-size: 0.8rem;
+  }
 
   &__form {
     max-width: 36rem;
@@ -50,8 +53,8 @@
   button.btn {
     display: block;
     margin: 4.4rem auto 12rem auto;
-    @media screen and (max-width:$sun-small) {
-      margin-bottom: 8rem;
+    @media screen and (max-width:$sun-tablet) {
+      margin-bottom: 10rem;
     }
   }
 }

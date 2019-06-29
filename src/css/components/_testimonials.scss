@@ -1,19 +1,170 @@
-// TODO
-
 .testimonials {
-    font-size: 1rem;
-    background: $testiBG;
-    position: relative;
+  font-size: 1rem;
+  background: $testiBG;
+  position: relative;
+  height: 55.5rem;
+  @media screen and (max-width: $sun-tablet) {
+    font-size: 0.8rem;
+    position: static;
+    height: auto;
+    padding: 2rem;
+  }
+  @media screen and (max-width: $sun-small) {
+    padding: 1rem;
+  }
+
+  &__para {
+    font-size: 2.2em;
+    line-height: 3.4rem;
+    padding: 0 10rem;
+    margin: 6.3rem 0 3.3rem;
+    @media screen and (max-width: $sun-mobile) {
+      font-size: 1.44rem;
+      line-height: 2.3rem;
+    }
+    @media screen and (max-width: $sun-small) {
+      padding: 0 2rem;
+    }
+  }
 }
 
 .carousel-box {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  background: $offWhite;
+  max-width: 94.5rem;
+  margin: auto;
+  min-height: 61.5rem;
+  box-shadow: $sun-shadow;
+  border-radius: 0.3rem;
+  padding: 0.1px 0;
+  @media screen and (max-width: $sun-tablet) {
+    top: 0;
+    transform: translateY(0);
+  }
+  @media screen and (max-width: $sun-tablet) {
+    min-height: auto;
+    padding-bottom: 12rem;
+  }
+
+  &__arr-left {
+    width: 46px;
+    height: 46px;
+    background: url("../img/arrowLeft.svg") center no-repeat;
+    position: absolute;
+    top: 50%;
+    left: -3rem - 4.6rem;
+    transform: translateY(-50%);
+    text-indent: -10000px;
+    cursor: pointer;
+    @media screen and (max-width: $sun-large) {
+      left: 2rem;
+    }
+    @media screen and (max-width: $sun-small) {
+      top: auto;
+      bottom: 1.2rem;
+    }
+  }
+
+  &__arr-right {
+    width: 46px;
+    height: 46px;
+    background: url("../img/arrowRight.svg") center no-repeat;
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 3rem);
+    transform: translateY(-50%);
+    text-indent: -10000px;
+    cursor: pointer;
+    @media screen and (max-width: $sun-large) {
+      left: calc(100% - 2rem - 4.6rem);
+    }
+    @media screen and (max-width: $sun-small) {
+      top: auto;
+      bottom: 1.2rem;
+    }
+  }
+
+  &__bullets {
+    position: absolute;
+    bottom: 5.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__bullet {
     position: relative;
-    background: $offWhite;
-    max-width: 94.5rem;
-    margin: auto;
-    // top: -3rem;
-    min-height: 61.5rem;
-    padding: 1px 0;
-    box-shadow: 0 16px 26px 0 rgba(0, 0, 0, 0.08);
-    border-radius: .3rem;
+    width: 10px;
+    height: 10px;
+    background: $bulletGrey;
+    border-radius: 50%;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:after {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: $mainMotif;
+      transition: all 0.3s ease-in-out;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      visibility: hidden;
+    }
+
+    &:hover {
+      background: $offWhite;
+    }
+
+    &:hover:after {
+      visibility: visible;
+    }
+
+    &--active {
+      width: 32px;
+      border-radius: 100px;
+      background: $mainMotif;
+      pointer-events: none;
+    }
+  }
+}
+
+.author-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 10rem;
+  @media screen and (max-width: $sun-small) {
+    padding: 0 2rem;
+  }
+
+  &__img {
+    margin-right: 2.5rem;
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.3125px;
+    color: $text50;
+    margin-bottom: 0.4rem;
+  }
+
+  &__subtitle {
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    letter-spacing: 0.3125px;
+    color: $text80;
+    font-style: italic;
+  }
 }

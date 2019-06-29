@@ -2,8 +2,10 @@
   font-size: 1rem;
   text-align: center;
   margin-bottom: 19rem;
+  padding: 0.1px 0;
   @media screen and (max-width:$sun-tablet) {
     font-size: 0.8rem;
+    margin-bottom: 10rem;
   }
   @media screen and (max-width:$sun-mobile) {
     margin-bottom: 5rem;
