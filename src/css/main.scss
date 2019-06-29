@@ -17,16 +17,10 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: $fontMain;
   color: $mainText;
   background: $offWhite;
   text-align: left;
-}
-
-.container {
-  width: 1440px;
-  max-width: 1440px;
-  margin: 0 auto;
 }
 
 .orange-motif {
@@ -44,7 +38,7 @@ body {
   text-transform: uppercase;
   display: block;
   margin-top: 11rem;
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: $sun-tablet) {
     margin-top: 8rem;
   }
 

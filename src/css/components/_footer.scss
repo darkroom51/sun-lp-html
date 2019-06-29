@@ -9,10 +9,10 @@
     flex: 1 1 25%;
   }
 
-  @media screen and (max-width:1200px) {
+  @media screen and (max-width:$sun-large) {
     padding: 7.3rem 2rem 8rem 2rem;
   }
-  @media screen and (max-width:1000px) {
+  @media screen and (max-width:$sun-tablet) {
     & > * {
       flex: 1 1 50%;
 
@@ -21,10 +21,10 @@
       }
     }
   }
-  @media screen and (max-width:768px) {
+  @media screen and (max-width:$sun-mobile) {
     padding: 4rem 2rem;
   }
-  @media screen and (max-width:480px) {
+  @media screen and (max-width:$sun-small) {
     flex-direction: column;
 
     & > * {
@@ -44,7 +44,7 @@
 
     &--emails {
       text-indent: -10000px;
-      @media screen and (max-width:1000px) {
+      @media screen and (max-width:$sun-tablet) {
         text-indent: 0px;
       }
     }

@@ -10,7 +10,7 @@
   &__form {
     max-width: 36rem;
     margin: 0 auto;
-    @media screen and (max-width:480px) {
+    @media screen and (max-width:$sun-small) {
       padding: 0 2rem;
     }
   }
@@ -50,7 +50,7 @@
   button.btn {
     display: block;
     margin: 4.4rem auto 12rem auto;
-    @media screen and (max-width:480px) {
+    @media screen and (max-width:$sun-small) {
       margin-bottom: 8rem;
     }
   }

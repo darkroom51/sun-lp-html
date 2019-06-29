@@ -11,12 +11,12 @@
     justify-content: space-between;
     align-items: center;
     padding: $menuOffset 7.5rem 0;
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: $sun-large) {
       font-size: 0.8rem;
       min-height: 62rem + $menuOffset;
       padding: $menuOffset 10.416666666666667% 0;
     }
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: $sun-tablet) {
       flex-direction: column;
       justify-content: space-around;
       min-height: 52rem + $menuMobileOffset;
@@ -26,13 +26,13 @@
 
   &__content {
     flex: 0 1 45.5rem;
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: $sun-tablet) {
       flex: 0 1 auto;
     }
   }
 
   &__img {
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: $sun-tablet) {
       margin-top: 4rem;
     }
 
@@ -45,7 +45,7 @@
     font-size: 7.2em;
     font-family: $fontMotif;
     margin-bottom: 1.5rem;
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: $sun-tablet) {
       font-size: 5.2em;
     }
   }
@@ -55,7 +55,7 @@
     line-height: 3rem;
     color: $offGrey;
     margin-bottom: 3rem;
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: $sun-tablet) {
       display: block;
       max-width: 40rem;
       margin: 3rem auto;

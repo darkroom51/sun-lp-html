@@ -3,6 +3,7 @@
   z-index: 100;
   width: 100%;
   background: $offWhite;
+  box-shadow: $sun-shadow;
 
   &__wrapper {
     max-width: 144rem;
@@ -12,11 +13,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: $sun-tablet) {
       height: $menuMobileOffset;
-      box-shadow: $sun-shadow;
+      // box-shadow: $sun-shadow;
     }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: $sun-small) {
       padding: 0 2rem;
     }
   }
@@ -28,7 +29,7 @@
     font-family: $fontMotif;
     font-size: 1.4rem;
     display: flex;
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: $sun-tablet) {
       font-size: 1.8rem;
       flex-direction: column;
       justify-content: flex-start;
@@ -51,7 +52,7 @@
       margin-right: 5rem;
       display: flex;
       align-items: center;
-      @media screen and (max-width: 1000px) {
+      @media screen and (max-width: $sun-tablet) {
         margin: 2rem 0;
       }
 
@@ -98,7 +99,7 @@
     position: relative;
     z-index: 200;
     cursor: pointer;
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: $sun-tablet) {
       display: block;
     }
 

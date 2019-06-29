@@ -7,6 +7,7 @@ $darkGrey: #242424;
 $offWhite: #fff;
 $offGrey: #C2C2C2;
 $inputBG: #313131;
+$testiBG: #F4F5F6;
 
 $text68: #686868;
 $text23: #232323;
@@ -14,20 +15,17 @@ $text15: #151515;
 $textCD: #CDCDCD;
 $text50: #505050;
 
-$testiBG: #F4F5F6;
-
-$fontMotif: "Cabin", sans-serif;
+$fontMotif: "Cabin", sans-serif; //temp replacement for Nexa
 $fontMain: "Roboto", sans-serif;
 
 $menuOffset: 10rem;
 $menuMobileOffset: 6rem;
-
 $sun-shadow: 0 16px 26px 0 rgba(0, 0, 0, 0.08);
 
 // temp mq variables
-$small: 480px;
-$mobile: 768px;
-$tablet: 1024px;
-$large: 1180px;
+$sun-small: 480px;
+$sun-mobile: 768px;
+$sun-tablet: 1000px;
+$sun-large: 1200px;
 
 
