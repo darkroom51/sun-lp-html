@@ -12,16 +12,16 @@
       <div class="navbar">
         <div class="navbar__wrapper">
           <h1 class="navbar__brand">
-            <a href="#sec-start" title="Sunscrapers">
+            <a href="#jump-start" title="Sunscrapers" class="smooth-scroll">
               <img src="./img/logo.svg" alt="SunScrapers" />
             </a>
           </h1>
           <nav>
             <ul class="navbar__menu">
-              <li><a href="#sec-start">Start</a></li>
-              <li><a href="#sec-services">Services</a></li>
-              <li><a href="#sec-testimonials">Testimonials</a></li>
-              <li><a href="#sec-contact" class="btn">Contact Us</a></li>
+              <li><a href="#jump-start" class="smooth-scroll">Start</a></li>
+              <li><a href="#jump-services" class="smooth-scroll">Services</a></li>
+              <li><a href="#jump-testimonials" class="smooth-scroll">Testimonials</a></li>
+              <li><a href="#jump-contact" class="btn smooth-scroll">Contact Us</a></li>
             </ul>
             <button class="navbar__hamburger">Open Menu</button>
           </nav>
@@ -30,7 +30,7 @@
     </header>
 
     <main class="main">
-      <section id="sec-start" class="hero">
+      <section id="jump-start" class="hero">
         <div class="hero__wrapper">
           <div class="hero__content">
             <h2 class="hero__heading">
@@ -41,7 +41,7 @@
               metus consectetur velit dolor eget diam mi condimentum ac ut a
               tellus vitae.
             </p>
-            <a href="#sec-services" class="btn--hero">services</a>
+            <a href="#sec-services" class="btn--hero smooth-scroll">services</a>
           </div>
           <div class="hero__img">
             <img src="./img/header_image.png" alt="" />
@@ -49,8 +49,8 @@
         </div>
       </section>
 
-      <section id="sec-services" class="services">
-        <em class="section-subheading">SERVICES</em>
+      <section class="services">
+        <em id="jump-services" class="section-subheading">SERVICES</em>
         <h2 class="section-heading">What we do?</h2>
         <p class="services__para">
           Agile is an umbrella term for different methodologies united by a
@@ -84,9 +84,9 @@
         </div>
       </section>
 
-      <section id="sec-testimonials" class="testimonials">
+      <section class="testimonials">
         <div class="carousel-box">
-          <em class="section-subheading">TESTIMONIALS</em>
+          <em  id="jump-testimonials" class="section-subheading">TESTIMONIALS</em>
           <h2 class="section-heading">What they say about us?</h2>
           <blockquote class="testimonials__para">
             „Faucibus netus sem lobortis consectetur a condimentum malesuada
@@ -114,8 +114,8 @@
         </div>
       </section>
 
-      <section id="sec-contact" class="contact">
-        <em class="section-subheading section-subheading--white">CONTACT US</em>
+      <section class="contact">
+        <em id="jump-contact" class="section-subheading section-subheading--white">CONTACT US</em>
         <h2 class="section-heading">Let’s talk!</h2>
         <form class="contact__form">
           <label for="name" class="contact__label">Name</label>
