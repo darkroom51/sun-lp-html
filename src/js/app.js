@@ -3,10 +3,12 @@ import { jump } from "./jump";
 
 document.addEventListener("DOMContentLoaded", function() {
   // variables
+  var navOffset = 149; // 70+80-1
   var menuToggleButton = document.querySelector(".navbar__hamburger");
   var menuElement = document.querySelector(".navbar__menu");
-  var navOffset = 140;
+  var navBarElement = document.querySelector('.navbar');
   var navLinks = document.querySelectorAll('.smooth-scroll');
+  var contactForm = document.querySelector('.contact__form');
 
   // toggle mobile menu
   menuToggleButton.addEventListener("click", function() {
@@ -28,4 +30,16 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
   }
+
+  // sticky menu
+  document.addEventListener('scroll', function () {
+    var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+    scrollPosition > navOffset ? navBarElement.classList.add('navbar--detached') : navBarElement.classList.remove('navbar--detached');
+  });
+
+  //contact form
+  contactForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    // TODO form validation
+  });
 });

@@ -4,19 +4,24 @@
   width: 100%;
   background: $offWhite;
   box-shadow: $sun-shadow;
+  height: $menuOffset;
+  transition: height 0.3s ease-in-out;
+  @media screen and (max-width: $sun-tablet) {
+    height: $menuMobileOffset;
+  }
+
+  &--detached {
+    height: $menuMobileOffset;
+  }
 
   &__wrapper {
     max-width: 144rem;
     margin: 0 auto;
-    height: $menuOffset;
+    height: 100%;
     padding: 0 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @media screen and (max-width: $sun-tablet) {
-      height: $menuMobileOffset;
-      // box-shadow: $sun-shadow;
-    }
     @media screen and (max-width: $sun-small) {
       padding: 0 2rem;
     }
