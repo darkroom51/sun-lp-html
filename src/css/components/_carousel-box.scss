@@ -1,0 +1,96 @@
+.carousel-box {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background: $offWhite;
+    max-width: 94.5rem;
+    margin: auto;
+    min-height: 61.5rem;
+    box-shadow: $sun-shadow;
+    border-radius: 0.3rem;
+    padding: 0.1px 0;
+    @media screen and (max-width: $sun-tablet) {
+      top: 0;
+      transform: translateY(0);
+    }
+    @media screen and (max-width: $sun-tablet) {
+      min-height: auto;
+      padding-bottom: 12rem;
+    }
+  
+    &__arr-left {
+      @include carousel-arrow(50%, calc(-4.6rem - 3rem), url("../img/arrowLeft.svg"));
+
+      @media screen and (max-width: $sun-large) {
+        left: 2rem;
+      }
+      @media screen and (max-width: $sun-small) {
+        top: auto;
+        bottom: 1.2rem;
+      }
+    }
+  
+    &__arr-right {
+      @include carousel-arrow(50%, calc(100% + 3rem), url("../img/arrowRight.svg"));
+    
+      @media screen and (max-width: $sun-large) {
+        left: calc(100% - 2rem - 4.6rem);
+      }
+      @media screen and (max-width: $sun-small) {
+        top: auto;
+        bottom: 1.2rem;
+      }
+    }
+  
+    &__bullets {
+      position: absolute;
+      bottom: 5.3rem;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    &__bullet {
+      position: relative;
+      width: 10px;
+      height: 10px;
+      background: $bulletGrey;
+      border-radius: 50%;
+      margin-right: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+  
+      &:after {
+        position: absolute;
+        content: "";
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: $mainMotif;
+        transition: all 0.3s ease-in-out;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        visibility: hidden;
+      }
+  
+      &:hover {
+        background: $offWhite;
+      }
+  
+      &:hover:after {
+        visibility: visible;
+      }
+  
+      &--active {
+        width: 32px;
+        border-radius: 100px;
+        background: $mainMotif;
+        pointer-events: none;
+      }
+    }
+  }

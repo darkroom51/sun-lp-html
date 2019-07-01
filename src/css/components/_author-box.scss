@@ -1,0 +1,29 @@
+.author-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10rem;
+    @media screen and (max-width: $sun-small) {
+      padding: 0 2rem;
+    }
+  
+    &__img {
+      margin-right: 2.5rem;
+    }
+  
+    &__title {
+      font-size: 1.6rem;
+      line-height: 2.3rem;
+      letter-spacing: 0.3125px;
+      color: $text50;
+      margin-bottom: 0.4rem;
+    }
+  
+    &__subtitle {
+      font-size: 1.6rem;
+      line-height: 2.1rem;
+      letter-spacing: 0.3125px;
+      color: $text80;
+      font-style: italic;
+    }
+  }

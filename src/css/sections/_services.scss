@@ -39,36 +39,3 @@
     }
   }
 }
-
-.services-box {
-  display: flex;
-  flex-direction: column;
-  min-height: 28.5rem;
-  @media screen and (max-width: $sun-mobile) {
-    display: block;
-    margin-bottom: 2rem;
-  }
-
-  &__icon {
-    margin-bottom: 2rem;
-
-    &--scrum {
-      margin-top: 8px;
-    }
-  }
-
-  &__title {
-    font-family: $fontMotif;
-    font-size: 1.8rem;
-    line-height: 1.9rem;
-    font-weight: 700;
-  }
-
-  a.btn {
-    margin-top: auto;
-    @media screen and (max-width: $sun-mobile) {
-      margin-top: 2rem;
-    }
-  }
-}
-

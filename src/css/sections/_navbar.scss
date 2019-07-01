@@ -70,25 +70,7 @@
         text-decoration: none;
         font-weight: 700;
         color: $mainText;
-
-        &::after {
-          content: "";
-          position: absolute;
-          left: 0;
-          bottom: -4px;
-          width: 100%;
-          height: 2px;
-          background: $mainMotif;
-
-          transform: scaleX(0);
-          transform-origin: right;
-          transition: transform 250ms ease-in;
-        }
-
-        &:hover::after {
-          transform: scaleX(1);
-          transform-origin: left;
-        }
+        @include link-underline(0, -4px, 100%);
       }
     }
   }
@@ -109,27 +91,11 @@
     }
 
     &:before {
-      content: "";
-      height: 5px;
-      width: 30px;
-      background: $mainMotif;
-      border-radius: 100px;
-      position: absolute;
-      top: -10px;
-      left: 0;
-      transition: all 0.5s ease-in-out;
+      @include hamburger-bar(-10px, $mainMotif);
     }
 
     &:after {
-      content: "";
-      height: 5px;
-      width: 30px;
-      background: $mainText;
-      border-radius: 100px;
-      position: absolute;
-      top: 10px;
-      left: 0;
-      transition: all 0.5s ease-in-out;
+      @include hamburger-bar(10px, $mainText);
     }
 
     &--close {

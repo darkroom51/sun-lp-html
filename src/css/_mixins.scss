@@ -1,0 +1,43 @@
+@mixin link-underline($left, $bottom, $width) {
+  &::after {
+    content: "";
+    position: absolute;
+    left: $left;
+    bottom: $bottom;
+    width: $width;
+    height: 2px;
+    background: $mainMotif;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+@mixin hamburger-bar($pos, $color) {
+  content: "";
+  height: 5px;
+  width: 30px;
+  background: $color;
+  border-radius: 100px;
+  position: absolute;
+  top: $pos;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin carousel-arrow($top, $left, $url) {
+  width: 46px;
+  height: 46px;
+  background: $url center no-repeat;
+  position: absolute;
+  top: $top;
+  left: $left;
+  transform: translateY(-50%);
+  text-indent: -10000px;
+  cursor: pointer;
+}

@@ -2,13 +2,21 @@
 @import "constants";
 @import "mixins";
 @import "typography";
+
+@import "components/headings";
+@import "components/carousel-box";
+@import "components/author-box";
+@import "components/highlight-box";
+@import "components/anim-btn";
+@import "components/social-menu";
 @import "components/btn";
-@import "components/navbar";
-@import "components/hero";
-@import "components/services";
-@import "components/testimonials";
-@import "components/contact";
-@import "components/footer";
+
+@import "sections/navbar";
+@import "sections/hero";
+@import "sections/services";
+@import "sections/testimonials";
+@import "sections/contact";
+@import "sections/footer";
 
 
 html {
@@ -23,6 +31,7 @@ body {
   text-align: left;
 }
 
+// some quick extras
 .orange-motif {
   color: $mainMotif;
   font-size: inherit;
@@ -32,30 +41,3 @@ body {
 a.smooth-scroll:focus {
   outline: none;
 }
-
-.section-subheading {
-  font-family: $fontMotif;
-  font-size: 1.2em;
-  color: $text15;
-  text-align: center;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  display: block;
-  margin-top: 11rem;
-  @media screen and (max-width: $sun-tablet) {
-    margin-top: 8rem;
-  }
-
-  &--white {
-    color: $offWhite;
-  }
-}
-
-.section-heading {
-  font-family: $fontMotif;
-  font-size: 3.6em;
-  text-align: center;
-  font-weight: 700;
-  margin-bottom: 3.4rem;
-}
-

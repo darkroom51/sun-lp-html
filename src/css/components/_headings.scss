@@ -1,0 +1,25 @@
+.section-subheading {
+  font-family: $fontMotif;
+  font-size: 1.2em;
+  color: $text15;
+  text-align: center;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 11rem;
+  @media screen and (max-width: $sun-tablet) {
+    margin-top: 8rem;
+  }
+
+  &--white {
+    color: $offWhite;
+  }
+}
+
+.section-heading {
+  font-family: $fontMotif;
+  font-size: 3.6em;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 3.4rem;
+}

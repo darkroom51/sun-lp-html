@@ -1,0 +1,29 @@
+.testimonials {
+  font-size: 1rem;
+  background: $testiBG;
+  position: relative;
+  height: 55.5rem;
+  @media screen and (max-width: $sun-tablet) {
+    font-size: 0.8rem;
+    position: static;
+    height: auto;
+    padding: 2rem;
+  }
+  @media screen and (max-width: $sun-small) {
+    padding: 1rem;
+  }
+
+  &__para {
+    font-size: 2.2em;
+    line-height: 3.4rem;
+    padding: 0 10rem;
+    margin: 6.3rem 0 3.3rem;
+    @media screen and (max-width: $sun-mobile) {
+      font-size: 1.44rem;
+      line-height: 2.3rem;
+    }
+    @media screen and (max-width: $sun-small) {
+      padding: 0 2rem;
+    }
+  }
+}
