@@ -25,12 +25,10 @@ document.addEventListener("DOMContentLoaded", function() {
   // smooth scroll (jump.js lib)
   for (const link of navLinks) {
     link.addEventListener("click", function(e) {
-      if (link.getAttribute("href") !== clickMemo) {
-        clickMemo = link.getAttribute("href");
-        jump(link.getAttribute("href"), { 
-          offset: -navOffset
-        });
-      }
+      e.preventDefault();
+      jump(link.getAttribute("href"), { 
+        offset: -navOffset
+      });
     });
   }
 

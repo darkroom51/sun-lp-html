@@ -29,6 +29,10 @@ body {
   font-family: inherit;
 }
 
+a.smooth-scroll:focus {
+  outline: none;
+}
+
 .section-subheading {
   font-family: $fontMotif;
   font-size: 1.2em;
