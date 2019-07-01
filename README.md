@@ -1,6 +1,6 @@
 # sun-lp
 
-Simple landing page layout. 
+Some cool landing page layout.
 
 ### Installation
 
@@ -23,4 +23,6 @@ npm run build
 Prod files will be stored in /dist folder
 
 ### Demo
+
+[http://sun-lp.surge.sh/](http://sun-lp.surge.sh/)
 
